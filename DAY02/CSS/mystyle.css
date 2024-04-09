@@ -1,0 +1,33 @@
+a:link {
+  /* 아직 방문되지 않은 링크의 색상 */
+  text-decoration: none;
+  color: blue;
+  background-color: white;
+}
+
+a:visited {
+  /* 방문된 링크의 색상 */
+  text-decoration: none;
+  color: green;
+}
+
+a:hover {
+  /* 마우스가 링크위에 있을 때 색상 */
+  text-decoration: none;
+  color: white;
+  background-color: blue;
+}
+
+table:nth-child(2n + 1) {
+  color: rgb(125, 125, 152);
+}
+
+/* 홀수 번째 행 */
+tr:nth-child(1) {
+  background-color: red;
+}
+
+/* 짝수 번째 행 */
+tr:nth-child(2) {
+  background-color: blue;
+}
