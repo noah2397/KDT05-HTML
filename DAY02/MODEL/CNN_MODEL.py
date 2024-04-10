@@ -30,9 +30,9 @@ def anya_bekki_classification(model, filepath):
     cv2.waitKey()
     cv2.destroyAllWindows()
     if not model(torch.FloatTensor(img.reshape(1,3,50,50))).argmax() :
-        print("아냐~")
+        print("Bekki~")
     else : 
-        print("베키.")
+        print("Anya~")
         
         
 if __name__ == "__main__":
