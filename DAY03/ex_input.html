@@ -10,11 +10,12 @@
 <body>
     <h2>이미지 선택</h2>
     <hr color="blue" size="2">
-    <form>
-        <input type="file" name="img_file" placeholder="파일 선택"><br>
-        <input type="text" name="messaage" hint="해당 내용을 말해줘" placeholder="전달메시지"><br>
+    <form action="/cgi-bin/send.py" method="post" enctype="multipart/form-data">
+        <input type="file" name="img_file" accept="image/png, image/jpeg" placeholder="파일 선택"><br>
+        <input type="text" name="messaage" placeholder="전달메시지"><br>
         <input type="submit" value="제출"><br>
     </form>
+    {}
 </body>
 
 </html>
