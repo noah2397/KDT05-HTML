@@ -4,6 +4,7 @@ import torch
 cgitb.enable()
 sys.path.append(os.path.dirname(os.path.abspath(os.path.dirname(__file__))))
 from CNN_MODEL import *
+import datetime
 
 # WEB 인코딩 설정
 sys.stdout = codecs.getwriter("utf-8")(sys.stdout.detach())
@@ -24,9 +25,14 @@ form = cgi.FieldStorage()
 result=""
 save_path=""
 if 'img_file' in form:
+    
+    suffix=datetime.datetime.now().strftime("%y%m%d_%H%M%S")
+    
+    
+    
     fileitem = form['img_file']
     img_file = fileitem.filename
-    save_path = f'./{img_file}'
+    save_path = f'./{suffix}_{img_file}'
     with open(save_path, 'wb') as f:
         f.write(fileitem.file.read())
     model = torch.load("./cgi-bin/Bekki.pth")
