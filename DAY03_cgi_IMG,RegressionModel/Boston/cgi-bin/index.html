@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link type="text/css" rel="stylesheet" href="../mystyle.css">
+</head>
+
+<body>
+    <form action="http://localhost:8080/cgi-bin/regression.py" method="post">
+        <h4>집 값 예측하기</h4>
+        <div>
+            <span>범죄율 (crim):</span>
+            <input type="number" name="crim" placeholder="0" value="0">
+
+            <span>주거지 비율 (zn):</span>
+            <input type="number" name="zn" placeholder="0" value="0">
+
+            <span>비소매상업지역 면적 비율 (indus):</span>
+            <input type="number" name="indus" placeholder="0" value="0">
+
+            <span>강 조망 가능 여부 (chas):</span>
+            <input type="number" name="chas" placeholder="0" value="0">
+
+            <span>일산화질소 농도 (nox):</span>
+            <input type="number" name="nox" placeholder="0" value="0">
+        </div>
+        <div>
+            <span>주택당 방 수 (rm):</span>
+            <input type="number" name="rm" placeholder="0" value="0">
+
+            <span>1940년 이전 건축된 주택 비율 (age):</span>
+            <input type="number" name="age" placeholder="0" value="0">
+
+            <span>직업센터까지의 거리 (dis):</span>
+            <input type="number" name="dis" placeholder="0" value="0">
+
+            <span>고속도로 접근성 지수 (rad):</span>
+            <input type="number" name="rad" placeholder="0" value="0">
+
+            <span>재산세율 (tax):</span>
+            <input type="number" name="tax" placeholder="0" value="0">
+        </div>
+        <div>
+            <span>학생/교사 비율 (ptratio):</span>
+            <input type="number" name="ptratio" placeholder="0" value="0">
+
+            <span>흑인 비율 (b):</span>
+            <input type="number" name="b" placeholder="0" value="0">
+
+            <span>하위 계층 비율 (lstat):</span>
+            <input type="number" name="lstat" placeholder="0" value="0">
+        </div>
+        <input type="submit" value="집 값 예측하기">
+    </form>
+
+    <p>예상 집 값은: {}</p>
+
+</body>
+
+</html>
