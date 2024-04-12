@@ -42,5 +42,5 @@
 | HTML-태그                                                    | [Naver Blog](https://blog.naver.com/mathnoah/223409667170) | 24.04.08 | DAY01     |
 | cgi-bin, 모델을 웹 사이트와 연동                             | [Naver Blog](https://blog.naver.com/mathnoah/223412298584) | 24.04.11 | DAY02     |
 | cgi-bin, CNN 모델을 웹 사이트와 연동(스파이패밀리:아냐,베키) | [Naver Blog](https://blog.naver.com/mathnoah/223412298584) | 24.04.11 | DAY03     |
-|                                                              | [Naver Blog]()                                             |          |           |
+| 보스턴 집 값 : 웹 서비스 연동                                | [Naver Blog](https://blog.naver.com/mathnoah/223413201119) | 24.04.12 | DAY03     |
 |                                                              | [Naver Blog]()                                             |          |           |
