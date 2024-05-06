@@ -36,6 +36,8 @@ if 'img_file' in form:
     with open(save_path, 'wb') as f:
         f.write(fileitem.file.read())
     model = torch.load("./cgi-bin/Bekki.pth")
+    # 모델의 가중치 저장
+    torch.save(model.state_dict(), "./cgi-bin/Bekki.pth")
     result = anya_bekki_classification(model, save_path)
 
 print_browser(result=result)
